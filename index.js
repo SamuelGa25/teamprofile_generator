@@ -19,30 +19,20 @@ const newManager = () =>{
         },{
             //array for Identification number
             type: "input",
-            name: "employeeID",
-            message: "What is your ID number? (required)"
-
-        },{
-            //array for office number 
-            type: "input",
-            name: "office",
-            message: "What is your office's number?"
-            
+            name: "id",
+            message: "What is your employee ID? (required)"
 
         },{
             //array for email
             type: "input",
             name: "email",
-            message:"What is your email?"
-
+            message:"What is your email? (required)"
+            
         },{
-
-            //array for type of employee 
-            type: "list",
-            name: "employeeRank",
-            message: "What rank of employee are you choosing? (required)",
-            choices: ["Manager", "Engineer", "Employee", "Intern"]
-
+            //array for office number 
+            type: "input",
+            name: "office",
+            message: "What is your office's number?"
         }
 
 
@@ -58,7 +48,7 @@ const managerMenu = () =>{
         {
             type: 'list',
             name: 'menu',
-            message: 'Do you want to continue with?',
+            message: 'What would you like to add?',
             choices: ['add a manager', 'add an engineer', 'add an employee', 'add an intern']
             
         }
@@ -68,16 +58,48 @@ const managerMenu = () =>{
 const newEngineer = () =>{
     console.log(`
     ---------------------
-    Adding new engineer!!
+        New Engineer!!
     ---------------------
     `);
+    //array for engineers
+    return inquirer.prompt([
+
+        {
+            //for name and lastname
+            type: 'input',
+            name: "name",
+            message:'What is your name and lastname? (required)'
+        },{
+            //array for Identification number
+            type: "input",
+            name: "id",
+            message: "What is your employee ID? (required)"
+    
+        },{
+            //array for email
+            type: "input",
+            name: "email",
+            message:"What is your email? (required)"
+            
+        },{
+            //array for email
+            type: "input",
+            name: "gitUser",
+            message:"What is your github Username? (required)"
+        }
+
+    ]).then(answers =>{
+        //showing the answers of engineer
+        console.log(answers);
+
+    })
 
 }
 
 const newEmployee = () =>{
     console.log(`
     ---------------------
-    Adding new employee!!
+        New Employee!!
     ---------------------
     `);
 
@@ -86,7 +108,7 @@ const newEmployee = () =>{
 const newIntern = () =>{
     console.log(`
     -----------------
-    Adding new intern!!
+        New Intern!!
     -----------------
     `);
 
@@ -95,9 +117,9 @@ const newIntern = () =>{
 
 const finishedTeam = () =>{
     console.log(`
-    -----------------
-    TEAM IS FINISHED!!
-    -----------------
+    ---------------
+    TEAM FINISHED!!
+    ---------------
     `);
 
 
