@@ -16,9 +16,20 @@
   ## Contribution 
   Samuel Garcia
 
+  ## Sample Mock-Up
+  ![Screen Shot 2022-06-19 at 2 02 04 AM](https://user-images.githubusercontent.com/100814742/174468015-8f8bd479-3ce3-4cfd-8cb9-6ef9f2a8a13a.png)
+
+  ## Walkthrough Video
+  https://user-images.githubusercontent.com/100814742/174468520-b78b89cd-482d-4962-8ce6-64136cec48a5.mp4
+
+
+
+
+
+
   ## Contact Information:
   - UserName: [samuelga25]
-  - Github: [teamprofile_generator](https://github.com/teamprofile_generator)
+  - Github: [samuelga25/teamprofile_generator](https://github.com/samuelga25/teamprofile_generator)
   - Email: [samuelgarenas@gmail.com]
 
   ## License
