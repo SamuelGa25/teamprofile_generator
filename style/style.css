@@ -1,0 +1,26 @@
+
+header{
+    color: black;
+    background-color: lightblue;
+
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+
+}
+
+main{
+    display: flex;
+    margin: 15px;
+    padding: 10px;
+}
+
+.card{
+    padding: 10px;
+    margin: 15px;
+}
+.box_header{
+    color: white;
+    background-color: lightblue; 
+}
