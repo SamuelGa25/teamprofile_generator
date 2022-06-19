@@ -25,30 +25,32 @@ function generateSite(managers, engineers, employees, interns){
             <h1>Team Members<h1>
         </header>
 
-        <section>
-            <h2>Management</h2>
-        </section>
-        <div class="row">${generateManager(addManager)}
-        </div>
+        <section class = management>
+            <h2>Management: </h2>
+            <div class="row">${generateManager(addManager)}</div>
 
-        <section>
-            <h2>Engineers</h2>
         </section>
-        <div class="row">${generateEngineer(addEngineer)}
-        </div>
-
-        <section>
-            <h2>Employees</h2>
-        </section>
-        <div class="row">${generateEmployee(addEmployee)}
-        </div>
-
-        <section>
-            <h2>Interns</h2>
-        </section>
-        <div class="row">${generateIntern(addIntern)}
-        </div>
     
+        <section class = engineering>
+            <h2>Engineers: </h2>
+            <div class="row">${generateEngineer(addEngineer)}</div>
+
+        </section>
+       
+
+        <section class = employeer>
+            <h2>Employees: </h2>
+            <div class="row">${generateEmployee(addEmployee)}</div>
+
+        </section>
+        
+
+        <section class = internship>
+            <h2>Interns: </h2>
+            <div class="row">${generateIntern(addIntern)}</div>
+
+        </section>
+        
 
 
     </body>
@@ -65,8 +67,7 @@ function generateSite(managers, engineers, employees, interns){
             return `
 
         <div class = "manager_box">
-            <div class = "box_header">
-            ${managerData.name}<br/>Manager</div>
+            <div class = "box_header">${managerData.name}<br/>Manager</div>
             <ul>
                 <li>ID: ${managerData.id}</li>
                 <li>Email: <span id: "email"><a href ="mailto:${managerData.email}">${managerData.email}</a></span></li>
@@ -86,8 +87,7 @@ function generateSite(managers, engineers, employees, interns){
             return `
 
         <div class = "engineer_box">
-            <div class = "box_header">
-            ${engineerData.name}<br/>Engineer</div>
+            <div class = "box_header">${engineerData.name}<br/>Engineer</div>
             <ul>
                 <li>ID: ${engineerData.id}</li>
                 <li>Email: <span id: "email"><a href ="mailto:${engineerData.email}">${engineerData.email}</a></span></li>
@@ -108,11 +108,10 @@ function generateSite(managers, engineers, employees, interns){
             return `
 
         <div class = "employee_box">
-            <div class = "box_header">
-            ${employeeData.name}<br/>Employee</div>
+            <div class = "box_header">${employeeData.name}<br/>Employee</div>
             <ul>
                 <li>id: ${employeeData.id}</li>
-                <li>Email: <span id: "email"><a href ="mailto:${employeeData.email}">${employeeData.email}</a></span></li>
+                <li>Email: <span id:"email"><a href ="mailto:${employeeData.email}">${employeeData.email}</a></span></li>
             </ul>
         </div>`;
         });
@@ -128,8 +127,7 @@ function generateSite(managers, engineers, employees, interns){
             return `
 
         <div class = "intern_box">
-            <div class = "box_header">
-            ${internData.name}<br/>Intern</div>
+            <div class = "box_header">${internData.name}<br/>Intern</div>
             <ul>
                 <li>ID: ${internData.id}</li>
                 <li>Email: <span id: "email"><a href ="mailto:${internData.email}">${internData.email}</a></span></li>

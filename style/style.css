@@ -1,26 +1,145 @@
+html{
+    background-color: lightcyan;
+}
 
 header{
     color: black;
-    background-color: lightblue;
+    background-color: lightblue; 
 
     padding: 10px;
     display: flex;
     justify-content: center;
     margin: 15px;
 
+    width: 900px;
+    
+
 }
 
-main{
-    display: flex;
-    margin: 15px;
-    padding: 10px;
+.header_box{
+    align-content: center;
+
 }
 
-.card{
-    padding: 10px;
-    margin: 15px;
-}
+
+
 .box_header{
-    color: white;
-    background-color: lightblue; 
+    
+    color: black;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    background-color: white;
+
+    border: 3px solid lightblue;
+    border-radius: 30px;
+    width: 90px;
+
 }
+.management .manager_box{
+
+    justify-content: center;
+
+    background-color: white;
+
+
+    justify-content:space-between;
+
+    border: 3px solid lightcyan;
+    border-radius: 30px;
+
+    padding: 1px;
+    
+    width: 250px;
+    height: 200px;
+
+}
+
+
+.engineering .engineer_box{
+
+    justify-content: center;
+
+    background-color: white;
+
+
+    justify-content:space-between;
+
+    border: 3px solid lightcyan;
+    border-radius: 30px;
+
+    padding: 1px;
+    
+    width: 200px;
+    height: 200px;
+
+}
+
+.employeer .employee_box{
+
+    justify-content: center;
+
+    background-color: white;
+
+
+    justify-content:space-between;
+
+    border: 3px solid lightcyan;
+    border-radius: 30px;
+
+    padding: 1px;
+    
+    width: 200px;
+    height: 200px;
+}
+
+.internship .intern_box{
+    justify-content: center;
+
+    background-color: white;
+
+
+    justify-content:space-between;
+
+    border: 3px solid lightcyan;
+    border-radius: 30px;
+
+    padding: 1px;
+    
+    width: 200px;
+    height: 200px;
+}
+
+
+.management,
+.engineering,
+.employeer,
+.internship{
+    
+    background-color: lightblue;
+
+    margin: 100px;
+    padding: 20px;
+
+    border-color: black;
+    border-radius: 30px;
+
+    font-weight: 400;
+    width: 400px;
+
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+
+    flex-direction: initial;
+
+}
+
+
+
+
+
+
+
